@@ -85,3 +85,12 @@ p {
     gap: 20px;
     min-width: 0;
 }
+
+
+/* to make website more responsive, only one column will be shown as soon as the screen width goes below 800px */
+
+@media (max-width: 800px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+}
