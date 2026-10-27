@@ -94,3 +94,76 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* boxes */
+
+.box {
+    background: var(--box);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+
+/* form */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 130px;
+    min-width: 0;
+}
+
+label {
+    color: var(--muted);
+}
+
+input,
+select {
+    width: 100%;
+    font: inherit;
+    color: var(--text);
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.error {
+    color: var(--error);
+    font-size: 0.9rem;
+    min-height: 1.3em;
+}
+
+
+/* buttons */
+
+.button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    color: var(--button-text);
+    background: var(--button);
+    border: 2px solid var(--button);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.outline-button {
+    color: var(--text);
+    background: transparent;
+    border-color: var(--text);
+}
+
+.delete-button {
+    color: var(--error);
+    background: transparent;
+    border-color: var(--error);
+}
