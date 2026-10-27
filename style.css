@@ -1,0 +1,57 @@
+/* color palette */
+:root {
+    --bg: #F7EFE7;
+    --box: #E8D2C4;
+    --border: #C7A9A3;
+    --text: #3E3239;
+    --muted: #6B5560;
+    --button: #6B5560;
+    --button-text: #F7EFE7;
+    --error: #9A3F55;
+}
+
+body.dark {
+    --bg: #3E3239;
+    --box: #6B5560;
+    --border: #9E8189;
+    --text: #F7EFE7;
+    --muted: #E8D2C4;
+    --button: #E8D2C4;
+    --button-text: #3E3239;
+    --error: #F0A9B8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Orange Avenue", Georgia, serif;
+    font-size: 1.05rem;
+    margin-top: 1.5rem;
+}
+
+h1,
+h2,
+button,
+.big-number {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+h2 {
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0;
+}
