@@ -56,6 +56,55 @@
 
          </section>
 
+
+         <!-- right side(total expenses and list of it) -->
+
+         <div class="right-side">
+
+            <section class="box" id="totals-box">
+                <h2>Totals</h2>
+                <p>Total Money Spent</p>
+                <p class="big-number" id="total-spent">0</p>
+                <ul id="category-totals"></ul>
+            </section>
+
+            <section class="box" id="list-box">
+
+                <h2>Expenses</h2>
+
+                <div class="filters">
+
+                    <div class="field">
+                        <label for="filter-category">Category</label>
+                        <select id="filter-category"></select>
+                    </div>
+                    <div class="field">
+                        <label for="filter-month">Month</label>
+                        <input type="month" id="filter-month">
+                    </div>
+                    <div class="field">
+                        <label for="sort-select">Sort By</label>
+                        <select id="sort-select">
+                            <option value="date-new">Date: newset first</option>
+                            <option value="date-old">Date: oldest first</option>
+                            <option value="amount-high">Amount: high to low</option>
+                            <option value="amount-low">Amount: low to high</option>
+                        </select>
+                    </div>
+                    <button type="button" id="clear-button" class="button outline-button">Clear Filters</button>
+
+                </div>
+
+                <ul id="expense-list"></ul>
+                <p id="empty-message" hidden></p>
+
+            </section>
+
+
+         </div>
+          
+
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
